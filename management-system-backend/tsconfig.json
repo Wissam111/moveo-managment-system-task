@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "sourceMap": true, // helps for debugging
+    "target": "es6",
+    "module": "commonjs",
+    "outDir": "./dist",
+    "baseUrl": "./src",
+    "removeComments": true, // removes all comments
+    "incremental": true, // compares dist and compiles whats needed
+    "esModuleInterop": true // allows default export
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/configs/index.js",
+    "src/utils/helpers/aws-config.ts",
+    "src/use-cases/project-use-case/create-project.js",
+    "src/use-cases/project-use-case/tests/get-create-delete-update.test.js",
+    "src/use-cases/project-use-case/tests/get-create-delete-update.test.js"
+  ],
+  "exclude": ["node_modules"]
+}

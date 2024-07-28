@@ -1,0 +1,37 @@
+{
+  "name": "management-system-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "dev": "nodemon server.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@paralleldrive/cuid2": "^2.2.2",
+    "amazon-cognito-identity-js": "^6.3.12",
+    "aws-jwt-verify": "^4.0.1",
+    "aws-sdk": "^2.1664.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "jwk-to-pem": "^2.0.5",
+    "jwt-decode": "^4.0.0",
+    "mongoose": "^8.5.1",
+    "morgan": "^1.10.0",
+    "socket.io": "^4.7.5",
+    "ts-node": "^10.9.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.14.12",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.3",
+    "typescript": "^5.5.4"
+  }
+}
