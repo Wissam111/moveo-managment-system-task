@@ -52,7 +52,7 @@
 
 ## Frameworks & Databases
 
-- Nextjs Framework as the Fronent
+- Nextjs Framework as the Fronend
 - Nodejs & Express as the Backend
 - MongoDb database
 
