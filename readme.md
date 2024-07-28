@@ -18,7 +18,7 @@
 `Run frontend folder `
    - production: npm build then npm start (recommended)
    - dev: npm run dev (not recommended)
-   - login:(the roles implmented only in the backend)
+   - login:(the roles implemented only in the backend)
       -  email: wissamkabha48@gmail.com password:We$am1234  (admin)
       -  email: vegeta48_48@hotmail.com password:We$am1234  (basic)
          
