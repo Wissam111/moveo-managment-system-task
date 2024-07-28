@@ -30,6 +30,13 @@
      
 </br>
 
+`Deployment Strategy for Handling 10,000 Users Per Day `
+
+     It should be Dockerized by creating a Docker image with Node.js installed. Use a secure .env configuration, such as AWS Secrets Manager or Azure Key Vault, and deploy the application to a service like Azure Container Registry. This 
+     approach will provide control over scaling the app horizontally
+     
+</br>
+
 ## Application GUI
 
 
