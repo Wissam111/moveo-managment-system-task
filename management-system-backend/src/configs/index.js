@@ -10,7 +10,7 @@ module.exports = {
   /**
    * Your favorite port
    */
-  port: process.env.PORT || 4001,
+  port: process.env.PORT || 4000,
 
   /**
    * That long string from mlab
