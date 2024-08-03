@@ -15,7 +15,6 @@ const authReducer = (state = initialState, action) => {
   switch (action.type) {
     case SIGNIN_SUCCESS:
       const { accessToken } = action.payload?.data;
-
       const session = { accessToken };
       saveSession(session);
       return {

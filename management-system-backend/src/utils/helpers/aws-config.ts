@@ -7,8 +7,8 @@ let cognitoAttributeList = [];
 
 //should be in env file
 const poolData = {
-  UserPoolId: "eu-central-1_6JZumGLUE",
-  ClientId: "6vdtusecjckctsu8vvfqu530a2",
+  UserPoolId: "eu-central-1_ASUARRxYL",
+  ClientId: "2e95rqcip44et51c2ep0fjmout",
 };
 
 const attributes = (key, value) => {

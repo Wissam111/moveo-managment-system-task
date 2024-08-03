@@ -14,9 +14,11 @@ const AuthActions = () => {
   const signin = async ({ email, password }) => {
     try {
       const data = await authRepository.signin({ email, password });
+      console.log("--------", data);
       showToast(ToastType.SUCCESS, data?.message);
       return data?.response;
     } catch (e) {
+      console.log("--------", e);
       const message = e?.data?.error.message;
       showToast(ToastType.ERROR, message);
     }
@@ -24,6 +26,7 @@ const AuthActions = () => {
 
   const onSignSuccess = ({ data }) => {
     return async (dispatch) => {
+      console.log("---", data);
       dispatch({
         type: SIGNIN_SUCCESS,
         payload: { data },

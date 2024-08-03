@@ -3,8 +3,10 @@ export const buildSiginUseCase = ({ userPool }) => {
   return async ({ email, password }: { email: string; password: string }) => {
     return new Promise((resolve, reject) => {
       const cognitoUser = AwsConfig.getCognitoUser(email);
+
       cognitoUser.authenticateUser(AwsConfig.getAuthDetails(email, password), {
         onSuccess: (result) => {
+          // console.log(result);
           const token = {
             accessToken: result.getAccessToken().getJwtToken(),
             idToken: result.getIdToken().getJwtToken(),
@@ -19,16 +21,16 @@ export const buildSiginUseCase = ({ userPool }) => {
             message: err.message || "Authentication failed",
           });
         },
-        newPasswordRequired: (userAttributes) => {
-          delete userAttributes.email_verified;
-          console.log("------------", userAttributes);
+        // newPasswordRequired: function (userAttributes, requiredAttributes) {
+        //   delete userAttributes.email_verified;
+        //   delete userAttributes.email; // <--- add this line
 
-          // sessionUserAttributes = userAttributes;
-          // cognitoUser.completeNewPasswordChallenge(
-          //   "We$am1234",
-          //   sessionUserAttributes
-          // );
-        },
+        //   cognitoUser.completeNewPasswordChallenge(
+        //     "We$am1234",
+        //     userAttributes,
+        //     this
+        //   );
+        // },
       });
     });
   };

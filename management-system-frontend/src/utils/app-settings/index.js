@@ -21,6 +21,6 @@ export const appSettings = {
 };
 
 export const API_SETTINGS = {
-  BASE_URL: "http://localhost:4000/api/v1/",
-  SWAGGER_URL: "http://localhost:4000/api/v1/swagger/index.html",
+  BASE_URL: "http://localhost:4001/api/v1/",
+  SWAGGER_URL: "http://localhost:4001/api/v1/swagger/index.html",
 };

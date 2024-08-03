@@ -4,9 +4,9 @@ import jwkToPem from "jwk-to-pem";
 import { CognitoJwtVerifier } from "aws-jwt-verify";
 
 const verifier = CognitoJwtVerifier.create({
-  userPoolId: "eu-central-1_6JZumGLUE",
+  userPoolId: "eu-central-1_ASUARRxYL",
   tokenUse: "access",
-  clientId: "6vdtusecjckctsu8vvfqu530a2",
+  clientId: "2e95rqcip44et51c2ep0fjmout",
 });
 
 export const requireAuthentication = async (

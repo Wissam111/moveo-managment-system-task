@@ -5,7 +5,6 @@
 export const makeRoleAuthorization = ({ role }) => {
   return (req, res, next) => {
     const roles = req.user["cognito:groups"];
-    console.log(roles, role);
 
     if (!roles.includes(role)) {
       return res
